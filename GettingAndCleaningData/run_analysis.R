@@ -90,6 +90,8 @@ for(i in 3:length(data2)){
 }
 data2[,1] <- lapply(data2[,1] , factor)
 
+write.table(data2, "GettingAndCleanindData2.csv", sep = ";", row.name=FALSE)
+
 dim(data2)
 View(data2)
 str(data2)
