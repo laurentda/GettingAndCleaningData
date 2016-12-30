@@ -30,6 +30,7 @@ From the data set in step 4, creates a second, independent tidy data set with th
 
 ##Code processed
 
+```R
 #downloading the files
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 f <- file.path(getwd(), "data.zip")
@@ -111,3 +112,4 @@ data2[,1] <- lapply(data2[,1] , factor)
 
 #export final data set to GettingAndCleanindData.csv
 write.table(data2, "GettingAndCleanindData.csv", sep = ";")
+```

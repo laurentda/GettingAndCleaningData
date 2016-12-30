@@ -23,7 +23,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ###Script used to create codeBook.rm
 
-```
+```R
 make.codeBook <- function(set) {
       df <- data.frame(
             row.names = NULL,
@@ -49,6 +49,7 @@ make.codeBook <- function(set) {
 
 ###Variables information
 "row.number" | "column.names" | "class" | "range" | "mean"
+--- | --- | --- | --- | ---
 "1" | "activity" | "factor" | "LAYING / SITTING / STANDING / WALKING / WALKING_DOWNSTAIRS / WALKING_UPSTAIRS" | "Not available"
 "2" | "subject" | "numeric" | "1 / 30" | "Not available"
 "3" | "Time Body accelerometer mean()-X_Mean" | "numeric" | "0.22159824394  /  0.3014610196" | "0.274302742245795"
